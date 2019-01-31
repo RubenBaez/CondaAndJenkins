@@ -10,7 +10,7 @@ pipeline{
 		buildDiscarder(logRotator(numToKeepStr: '10'))
 		timestamps()
 	}
-	enviroment{
+	environment{
 		PATH="/var/lib/jenkins/anaconda3/bin:$PATH"
 	}
 	stages{
