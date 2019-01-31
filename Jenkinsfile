@@ -14,7 +14,7 @@ pipeline{
 		PATH="/var/lib/jenkins/anaconda3/bin:$PATH"
 	}
 	stages{
-	stages("Code pull"){
+	stage("Code pull"){
 		steps{
 			checkout scm
 		}
