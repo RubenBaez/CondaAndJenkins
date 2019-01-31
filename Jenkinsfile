@@ -23,6 +23,7 @@ pipeline{
 		steps{
 			echo "Hola Ruben"
 			sh '''conda create --yes -n ${BUILD_TAG} python
+			      echo "Espacio entre conda y source"
 			      source activate ${BUILD_TAG}
 			      pip install -r requirements.txt
 			   '''
