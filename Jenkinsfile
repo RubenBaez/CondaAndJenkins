@@ -21,7 +21,7 @@ pipeline{
 	}
 	stage('Build enviroment'){
 		steps{
-			echo "Ruben"
+			echo "Hola Ruben"
 		}
 	}
 	}
