@@ -22,6 +22,16 @@ pipeline{
 	stage('Build enviroment'){
 		steps{
 			echo "Hola Ruben"
+			sh '''conda create --yes -n ${BUILD_TAG} python
+			      source activate ${BUILD_TAG}
+			      pip install -r requirements.txt
+			   '''
+			
+		}
+	}
+	stage('Test environment'){
+		steps{
+			echo "Estas en produccion"
 		}
 	}
 	}
